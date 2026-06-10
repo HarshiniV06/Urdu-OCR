@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-ink text-parchment antialiased;
+  }
+  ::selection {
+    @apply bg-gold/30 text-white;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/[0.08] bg-white/[0.04] shadow-card backdrop-blur-2xl;
+  }
+  .glass-strong {
+    @apply border border-white/[0.1] bg-white/[0.06] shadow-card-lg backdrop-blur-2xl;
+  }
+  .auth-card {
+    @apply glass-strong rounded-3xl p-8 sm:p-10;
+  }
+  .input-field {
+    @apply w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/25 focus:border-gold/50 focus:ring-2 focus:ring-gold/20;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-gold to-gold-light px-6 py-3 text-sm font-semibold text-ink shadow-glow transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.02] px-4 py-2 text-sm text-white/70 transition hover:border-gold/30 hover:bg-white/[0.05] hover:text-white;
+  }
+  .hero-glow {
+    background: radial-gradient(ellipse 80% 60% at 50% -20%, rgba(212, 160, 23, 0.18), transparent);
+  }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { @apply rounded-full bg-white/10; }
+::-webkit-scrollbar-thumb:hover { @apply bg-white/20; }

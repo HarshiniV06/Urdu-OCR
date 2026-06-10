@@ -1,0 +1,14 @@
+node_modules/
+client/dist/
+client/node_modules/
+server/node_modules/
+__pycache__/
+*.pyc
+.env
+ml-service/checkpoints/*.pth
+ml-service/checkpoints/*.pt
+venv/
+.venv/
+frontend/
+*.log
+.DS_Store
