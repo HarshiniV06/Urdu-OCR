@@ -345,20 +345,20 @@ Real-time predictions using deep learning-based OCR models.
 
 Urdu_OCR_Project/
 ├── client/
-│   ├── src/
-│   └── public/
+│ ├── src/
+│ └── public/
 │
 ├── server/
-│   ├── routes/
-│   ├── models/
-│   ├── controllers/
-│   └── middleware/
+│ ├── routes/
+│ ├── models/
+│ ├── controllers/
+│ └── middleware/
 │
 ├── ml-service/
-│   ├── checkpoints/
-│   ├── models/
-│   ├── utils/
-│   └── main.py
+│ ├── checkpoints/
+│ ├── models/
+│ ├── utils/
+│ └── main.py
 │
 ├── start.bat
 └── README.md
@@ -407,10 +407,6 @@ npm install
 npm run dev
 ```
 
-Open:
-
-http://localhost:5173
-
 ---
 
 # Future Work
@@ -437,18 +433,3 @@ Potential research and engineering extensions include:
 * Limited evaluation on handwritten data
 
 ---
-
-# References
-
-Dataset:
-MMU-OCR-21 Urdu Character Recognition Dataset
-
-Frameworks:
-
-* PyTorch
-* FastAPI
-* React
-* Express.js
-* MongoDB
-
-This project demonstrates the integration of Deep Learning, Computer Vision, MLOps, and Full-Stack Development to build a complete AI-powered Urdu Character Recognition platform capable of real-world deployment.
