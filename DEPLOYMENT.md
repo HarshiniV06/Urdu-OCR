@@ -15,6 +15,8 @@ This guide gives you every small step needed to deploy the project on Render and
 
 If you have not pushed the code yet, do that first.
 
+> Important: The ML model checkpoint file must be present in the repository before Render deploys the ML service. The file is `ml-service/checkpoints/best_model.pth`.
+
 ---
 
 ## 1) Deploy the ML service on Render

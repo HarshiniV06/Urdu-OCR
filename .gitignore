@@ -6,6 +6,7 @@ __pycache__/
 *.pyc
 .env
 ml-service/checkpoints/*.pth
+!ml-service/checkpoints/best_model.pth
 ml-service/checkpoints/*.pt
 venv/
 .venv/
