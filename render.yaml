@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: urdu-ocr-server
+    env: node
+    plan: free
+    buildCommand: npm install --prefix server
+    startCommand: npm start --prefix server
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        fromDatabase:
+          name: urdu-ocr-db
+          property: connectionString
+      - key: ML_SERVICE_URL
+        value: https://YOUR_RENDER_ML_SERVICE_URL
